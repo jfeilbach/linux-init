@@ -8,6 +8,13 @@ apk add bind-tools
 dig +short myip.opendns.com @resolver1.opendns.com
 # or
 dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
+# get ipv4
+dig @resolver4.opendns.com myip.opendns.com +short -4
+# get ipv6
+dig @ns1.google.com TXT o-o.myaddr.l.google.com +short -6
+# via curl
+curl https://checkip.amazonaws.com 
+curl -s http://ifconfig.me
 # setup /etc/motd
 sudo chmod -x /etc/update-motd.d/90-updates-available
 sudo chmod -x /etc/update-motd.d/10-help-text 
