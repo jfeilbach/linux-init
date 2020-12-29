@@ -22,5 +22,5 @@ sudo chmod +x /etc/update-motd.d/90-updates-available
 # in /etc/default/motd-news set ENABLED=0
 # or
 touch $HOME/.hushlogin
-3 gernate new key
+# gernate new key
 ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519 -C "jfeilbach@foo.com"
