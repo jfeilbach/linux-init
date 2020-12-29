@@ -8,3 +8,10 @@ apk add bind-tools
 dig +short myip.opendns.com @resolver1.opendns.com
 # or
 dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
+# setup /etc/motd
+sudo chmod -x /etc/update-motd.d/90-updates-available
+sudo chmod -x /etc/update-motd.d/10-help-text 
+sudo chmod +x /etc/update-motd.d/90-updates-available
+# in /etc/default/motd-news set ENABLED=0
+# or
+touch $HOME/.hushlogin
