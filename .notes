@@ -1,3 +1,7 @@
+# Set default editor
+sudo update-alternatives --config editor
+# list all alternatives
+sudo update-alternatives --all
 # Get public IP address Alpine docker
 docker exec -it transmission-openvpn /bin/bash
 apk add bind-tools
