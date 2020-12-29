@@ -1,0 +1,6 @@
+# Get public IP address Alpine docker
+docker exec -it transmission-openvpn /bin/bash
+apk add bind-tools
+dig +short myip.opendns.com @resolver1.opendns.com
+# or
+dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
